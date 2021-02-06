@@ -1,13 +1,13 @@
-package com.teaphy.lazyfragment.activity
+package com.teaphy.fragmentcrawler.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.teaphy.lazyfragment.R
-import com.teaphy.lazyfragment.fragment.OneFragment
-import com.teaphy.lazyfragment.fragment.ThreeFragment
-import com.teaphy.lazyfragment.fragment.TwoFragment
+import com.teaphy.fragmentcrawler.R
+import com.teaphy.fragmentcrawler.fragment.OneFragment
+import com.teaphy.fragmentcrawler.fragment.ThreeFragment
+import com.teaphy.fragmentcrawler.fragment.TwoFragment
 
 class DynamicLoadActivity : AppCompatActivity() {
 

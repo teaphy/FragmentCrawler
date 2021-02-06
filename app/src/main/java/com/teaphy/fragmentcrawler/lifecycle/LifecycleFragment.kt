@@ -1,4 +1,4 @@
-package com.teaphy.lazyfragment.fragment
+package com.teaphy.fragmentcrawler.lifecycle
 
 import android.app.Activity
 import android.content.Context
@@ -8,22 +8,22 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.teaphy.lazyfragment.R
+import com.teaphy.fragmentcrawler.R
 
 
 
-class OneFragment : Fragment() {
+class LifecycleFragment : Fragment() {
 
     private val TAG = javaClass.simpleName
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        log("onAttach - Context")
-    }
 
     override fun onAttach(activity: Activity) {
         super.onAttach(activity)
         log("onAttach - Activity")
+    }
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        log("onAttach - Context")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

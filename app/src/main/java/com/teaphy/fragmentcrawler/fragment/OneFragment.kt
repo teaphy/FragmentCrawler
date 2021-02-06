@@ -1,4 +1,4 @@
-package com.teaphy.lazyfragment.lazy
+package com.teaphy.fragmentcrawler.fragment
 
 import android.app.Activity
 import android.content.Context
@@ -8,11 +8,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.teaphy.lazyfragment.R
+import com.teaphy.fragmentcrawler.R
 
 
 
-class ThreeLazyFragment : LazyFragment() {
+class OneFragment : Fragment() {
 
     private val TAG = javaClass.simpleName
 
@@ -36,7 +36,7 @@ class ThreeLazyFragment : LazyFragment() {
         savedInstanceState: Bundle?
     ): View? {
         log("onCreateView")
-        return inflater.inflate(R.layout.fragment_tree, container, false)
+        return inflater.inflate(R.layout.fragment_one, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -52,10 +52,6 @@ class ThreeLazyFragment : LazyFragment() {
     override fun onHiddenChanged(hidden: Boolean) {
         super.onHiddenChanged(hidden)
         log("onHiddenChanged - hidden: $hidden")
-    }
-
-    override fun loadData() {
-        log("loadData")
     }
 
     override fun setUserVisibleHint(isVisibleToUser: Boolean) {

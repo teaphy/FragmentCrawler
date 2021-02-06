@@ -1,4 +1,4 @@
-package com.teaphy.lazyfragment.fragment
+package com.teaphy.fragmentcrawler.fragment
 
 import android.app.Activity
 import android.content.Context
@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.teaphy.lazyfragment.R
+import com.teaphy.fragmentcrawler.R
 
 
 

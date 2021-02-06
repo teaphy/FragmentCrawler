@@ -47,7 +47,7 @@
 
     <fragment
         android:id="@+id/one_fragment"
-        android:name="com.teaphy.lazyfragment.fragment.OneFragment"
+        android:name="com.teaphy.fragmentcrawler.fragment.OneFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,7 +56,7 @@
 
     <fragment
         android:id="@+id/two_fragment"
-        android:name="com.teaphy.lazyfragment.fragment.TwoFragment"
+        android:name="com.teaphy.fragmentcrawler.fragment.TwoFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,7 +65,7 @@
 
     <fragment
         android:id="@+id/three_fragment"
-        android:name="com.teaphy.lazyfragment.fragment.ThreeFragment"
+        android:name="com.teaphy.fragmentcrawler.fragment.ThreeFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

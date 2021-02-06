@@ -1,4 +1,4 @@
-package com.teaphy.lazyfragment
+package com.teaphy.fragmentcrawler
 
 import org.junit.Test
 

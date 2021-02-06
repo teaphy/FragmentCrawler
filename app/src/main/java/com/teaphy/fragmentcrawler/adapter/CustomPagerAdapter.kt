@@ -1,4 +1,4 @@
-package com.teaphy.lazyfragment.adapter
+package com.teaphy.fragmentcrawler.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

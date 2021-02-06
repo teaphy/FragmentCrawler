@@ -1,10 +1,10 @@
-package com.teaphy.lazyfragment.activity
+package com.teaphy.fragmentcrawler.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.teaphy.lazyfragment.R
+import com.teaphy.fragmentcrawler.R
 
 class StaticLoadActivity : AppCompatActivity() {
 

@@ -1,15 +1,20 @@
-package com.teaphy.lazyfragment
+package com.teaphy.fragmentcrawler
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.teaphy.lazyfragment.activity.*
+import com.teaphy.fragmentcrawler.activity.*
+import com.teaphy.fragmentcrawler.lifecycle.LifecycleActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
+
+    fun gotoLifecycle(view: View) {
+        startActivity(Intent(this, LifecycleActivity::class.java))
     }
 
     fun gotoStaticLoad(view: View) {
@@ -35,4 +40,5 @@ class MainActivity : AppCompatActivity() {
     fun gotoViewPagerLoadMulti(view: View) {
         startActivity(Intent(this, ViewPagerLoadMultiActivity::class.java))
     }
+
 }

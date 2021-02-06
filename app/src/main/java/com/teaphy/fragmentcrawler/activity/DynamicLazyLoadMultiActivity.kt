@@ -1,26 +1,25 @@
-package com.teaphy.lazyfragment.activity
+package com.teaphy.fragmentcrawler.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import com.teaphy.lazyfragment.R
-import com.teaphy.lazyfragment.fragment.OneFragment
-import com.teaphy.lazyfragment.fragment.ThreeFragment
-import com.teaphy.lazyfragment.fragment.TwoFragment
+import com.teaphy.fragmentcrawler.R
+import com.teaphy.fragmentcrawler.lazy.OneLazyFragment
+import com.teaphy.fragmentcrawler.lazy.ThreeLazyFragment
+import com.teaphy.fragmentcrawler.lazy.TwoLazyFragment
 
-class DynamicLoadMultiActivity : AppCompatActivity() {
+class DynamicLazyLoadMultiActivity : AppCompatActivity() {
 
     private val TAG = javaClass.simpleName
 
-    val oneFragment = OneFragment()
-    val twoFragment = TwoFragment()
-    val threeFragment = ThreeFragment()
+    val oneFragment = OneLazyFragment()
+    val twoFragment = TwoLazyFragment()
+    val threeFragment = ThreeLazyFragment()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dynamic_load_multi)
-
     }
 
     override fun onStart() {

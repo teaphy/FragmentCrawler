@@ -1,22 +1,18 @@
-package com.teaphy.lazyfragment.activity
+package com.teaphy.fragmentcrawler.lifecycle
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.teaphy.lazyfragment.R
+import com.teaphy.fragmentcrawler.R
 
-class StaticLoadMultiActivity : AppCompatActivity() {
+class LifecycleActivity : AppCompatActivity() {
 
     private val TAG = javaClass.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         log("onCreate")
-
-        setContentView(R.layout.activity_static_load_multi)
-
-
+        setContentView(R.layout.activity_lifecycle)
     }
 
     override fun onStart() {

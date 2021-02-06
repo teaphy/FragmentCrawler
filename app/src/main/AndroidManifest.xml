@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.teaphy.lazyfragment">
+    package="com.teaphy.fragmentcrawler">
 
     <application
         android:allowBackup="true"
@@ -9,18 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LazyFragment">
-        <activity android:name=".activity.StaticLoadActivity" />
-
-        <activity android:name=".activity.StaticLoadMultiActivity" />
-
-        <activity android:name=".activity.DynamicLoadActivity" />
-
-        <activity android:name=".activity.DynamicLoadMultiActivity" />
-
-        <activity android:name=".activity.DynamicLazyLoadMultiActivity" />
-
-        <activity android:name=".activity.ViewPagerLoadMultiActivity" />
-
+        <activity android:name=".lifecycle.LifecycleActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,6 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.StaticLoadActivity" />
+        <activity android:name=".activity.StaticLoadMultiActivity" />
+        <activity android:name=".activity.DynamicLoadActivity" />
+        <activity android:name=".activity.DynamicLoadMultiActivity" />
+        <activity android:name=".activity.DynamicLazyLoadMultiActivity" />
+        <activity android:name=".activity.ViewPagerLoadMultiActivity" />
     </application>
 
 </manifest>

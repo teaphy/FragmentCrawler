@@ -1,4 +1,4 @@
-package com.teaphy.lazyfragment
+package com.teaphy.fragmentcrawler
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
