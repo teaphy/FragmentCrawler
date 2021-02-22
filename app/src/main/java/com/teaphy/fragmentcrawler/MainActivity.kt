@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.teaphy.fragmentcrawler.activity.*
+import com.teaphy.fragmentcrawler.lifecycle.HideOrShowActivity
 import com.teaphy.fragmentcrawler.lifecycle.LifecycleActivity
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +16,10 @@ class MainActivity : AppCompatActivity() {
 
     fun gotoLifecycle(view: View) {
         startActivity(Intent(this, LifecycleActivity::class.java))
+    }
+
+    fun gotoHideOrShow(view: View) {
+        startActivity(Intent(this, HideOrShowActivity::class.java))
     }
 
     fun gotoStaticLoad(view: View) {
@@ -40,5 +45,6 @@ class MainActivity : AppCompatActivity() {
     fun gotoViewPagerLoadMulti(view: View) {
         startActivity(Intent(this, ViewPagerLoadMultiActivity::class.java))
     }
+
 
 }
